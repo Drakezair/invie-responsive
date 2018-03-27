@@ -105,12 +105,32 @@
     </footer>
 
     <script type="text/javascript">
-      var $burguerButton = document.getElementById('burguer-button');
+
+      var consulta =  window.matchMedia('(max-width: 520px)');
+      consulta.addListener(mediaQuery);
+
+       var $burguerButton = document.getElementById('burguer-button');
       var $menu = document.getElementById('menu');
 
-      $burguerButton.addEventListener('touchstart', function(){
+
+      function toggleMenu(){
         $menu.classList.toggle('active');
-      });
+        $burguerButton.classList.toggle('icon-cancel');
+      }
+
+      function mediaQuery(){
+        if(consulta.matches){
+          console.log('se cumple');
+          $burguerButton.addEventListener('touchstart', toggleMenu );
+        } else {
+          console.log('no se cumple')
+          $burguerButton.removeEventListener('touchstart', toggleMenu );
+        }
+      }
+
+      mediaQuery();
+
+     
 
     </script>
   </body>

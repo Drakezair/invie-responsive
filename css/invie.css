@@ -324,7 +324,7 @@ input:focus, textarea:focus {
   line-height: 40px;
   height: 40px;
   background: #395667;
-  display: inline-block;
+  display: none;
   text-align: center;
 
   position: fixed;
@@ -454,6 +454,10 @@ input:focus, textarea:focus {
 }
 
 @media screen and (max-width: 520px){
+
+  .burguer-button{
+    display: inline-block;
+  }
 
   .portada .contenedor {
     position: static;
