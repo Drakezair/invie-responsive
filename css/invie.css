@@ -235,7 +235,7 @@ input:focus, textarea:focus {
 .contenedor-guitarra-b {
   margin-left: 370px;
   position: relative;
-  bottom: 90px;
+  bottom: 35px;
 
 }
 
@@ -336,9 +336,43 @@ input:focus, textarea:focus {
   margin: 20px;
 }
 
+
+.video-demo-contenedor {
+    margin: 0 10px 30px 10px;
+    border: 5px solid #395061;
+    margin-bottom: 80px;
+}
+
+.video-responsive-contenedor {
+  position: relative;
+  padding-top: 56.25%
+}
+
+.video-responsive-src {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
 @media screen and (max-width: 800px) {
  
 
+  /*precios*/
+
+  .tabla {
+    margin: 50px 10px;
+    border: 1px solid #273b47
+  }
+
+  .tabla .contenedor {
+     overflow: auto;
+   }
+  /*precios*/
 
   /*portada*/
   .titulo{
@@ -387,6 +421,12 @@ input:focus, textarea:focus {
     position: static;
     margin: 0;
   }
+
+  .video-demo-contenedor {
+    border: 5px solid #395061;
+    max-width: 680px; 
+    margin: 0 auto;
+}
   /*guitarras*/
 }
 
@@ -451,12 +491,18 @@ input:focus, textarea:focus {
     padding: 0;
   }
 
+  .video-demo-contenedor {
+    border: 5px solid #395061;
+    max-width: 380px; 
+    margin: 0 auto;
+}
+
 }
 
 @media screen and (max-width: 520px){
 
   .burguer-button{
-    display: inline-block;
+    display: block;
   }
 
   .portada .contenedor {
@@ -526,6 +572,4 @@ input:focus, textarea:focus {
   }
   .
 }
-
-
 
